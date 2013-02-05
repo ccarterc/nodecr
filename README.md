@@ -1,11 +1,12 @@
-# Tesseract for node.js
+# Tesseract for Node.js
 
-A simple wrapper for the Tesseract OCR package for node.js
+A simple wrapper for the Tesseract OCR package for Node.js
 
 ## Installation
-npm install nodecr
+`npm install nodecr`
 
 ## Versions
+* **0.0.5**: Add possibility to override logger (quiet nodecr, see example below)
 * **0.0.4**: Changed name to nodecr and published node module (formerly node-tesseract)
 * **0.0.3**: Added support for custom preprocessors, OTB Preprocessor using ImageMagick 'convert'
 * **0.0.2**: Refactored to support tesseract 3.01, added language parameter, config parameter, documentation
@@ -37,7 +38,10 @@ nodecr.process(__dirname + '/path/to/image.jpg',function(err, text) {
 // Recognise text of any language in any format but preprocess the image
 // with ImageMagick 'convert' (This requires ImageMagick to be installed)
 
-// You can write and use your own preprocessors easily, just have a look at lib/nodecr.js
+// uncomment this to quiet nodecr
+//nodecr.log = function() {};
+
+// You can write and use your own preprocessors easily, just have a look at src/nodecr.coffee
 nodecr.process(__dirname + '/path/to/image.jpg',function(err, text) {
 	if(err) {
 		console.error(err);
@@ -47,3 +51,6 @@ nodecr.process(__dirname + '/path/to/image.jpg',function(err, text) {
 	console.log(text);
 }, null, null, null, nodecr.preprocessors.convert);
 ```
+
+## License
+MIT

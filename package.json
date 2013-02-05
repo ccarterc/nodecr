@@ -1,6 +1,6 @@
 {
   "name": "nodecr",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Joscha Feth <joscha@feth.com>",
   "description": "A simple wrapper for the Tesseract OCR package",
   "main": "./lib/nodecr.js",
