@@ -48,7 +48,6 @@ nodecr.process(__dirname + '/path/to/image.jpg',function(err, text) {
 	} else {
 		console.log(text);
 	}
-	console.log(text);
 }, null, null, null, nodecr.preprocessors.convert);
 ```
 
