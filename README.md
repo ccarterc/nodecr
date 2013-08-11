@@ -2,6 +2,13 @@
 
 A simple wrapper for the Tesseract OCR package for Node.js
 
+## Demo
+nodecr has been used in a NodeCopter demo, translating text into real-time flight commands.
+Here's a little video created by stitching together the photos taken by the onboard camera (each image was passed through nodecr):
+http://youtu.be/aGo6oPC92QE.
+
+Source code available here: https://github.com/photomoose/OCRDrone
+
 ## Installation
 `npm install nodecr`
 
