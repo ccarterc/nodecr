@@ -17,7 +17,7 @@
     "text recognition"
   ],
   "dependencies": {
-    "tmp": ">= 0.0.14"
+    "tmp": ">= 0.0.21"
   },
   "devDependencies": {},
   "license": "MIT",
