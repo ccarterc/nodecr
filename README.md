@@ -2,6 +2,8 @@
 
 A simple wrapper for the Tesseract OCR package for Node.js
 
+[![NPM version](https://badge.fury.io/js/nodecr.png)](http://badge.fury.io/js/nodecr)
+
 ## Test
 
 		./bin/test
