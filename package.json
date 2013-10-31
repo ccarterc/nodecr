@@ -4,6 +4,9 @@
   "author": "Joscha Feth <joscha@feth.com>",
   "description": "A simple wrapper for the Tesseract OCR package",
   "main": "./lib/nodecr.js",
+  "scripts":{
+    "test": "node ./test/test.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/joscha/nodecr/"
