@@ -15,7 +15,11 @@ A simple wrapper for the Tesseract OCR package for Node.js
 Added the ability to set the resize and sharpen params.  Here is an example:
 
 ```Javascript
-var nodecr = require('nodecr');
+var nodecr = require('nodecr'),
+options = [
+  {'-type':'Grayscale'},
+  {'-resize':'200%'}
+];
 
 nodecr.process(__dirname + '/pics/poster2.jpg',function(err, text) {
     if(err) {
@@ -23,7 +27,7 @@ nodecr.process(__dirname + '/pics/poster2.jpg',function(err, text) {
     } else {
         console.log(text);
     }
-}, null, null, null, nodecr.preprocessors.convert, {resize: '200%', sharpen: '10'});
+}, null, null, null, nodecr.preprocessors.convert, options);
 ```
 
 
