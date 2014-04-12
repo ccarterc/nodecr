@@ -9,6 +9,23 @@ A simple wrapper for the Tesseract OCR package for Node.js
 ## Test
 
 		./bin/test
+		
+## Special Preprocessor Params
+
+Added the ability to set the resize and sharpen params.  Here is an example:
+
+```Javascript
+var nodecr = require('nodecr');
+
+nodecr.process(__dirname + '/pics/poster2.jpg',function(err, text) {
+    if(err) {
+        console.error(err);
+    } else {
+        console.log(text);
+    }
+}, null, null, null, nodecr.preprocessors.convert, {resize: '200%', sharpen: '10'});
+```
+
 
 ## Demo
 nodecr has been used in a NodeCopter demo, translating text into real-time flight commands.
