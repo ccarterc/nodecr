@@ -1,3 +1,5 @@
+# This is the nodecr project plus a small hax I put in place to let you use image magick for preprocessing.
+
 # Tesseract for Node.js
 
 A simple wrapper for the Tesseract OCR package for Node.js
