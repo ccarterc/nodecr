@@ -12,7 +12,7 @@ A simple wrapper for the Tesseract OCR package for Node.js
 		
 ## Special Preprocessor Params
 
-Added the ability to set the resize and sharpen params.  Here is an example:
+Added the ability to use any image magick commands (requires image magick).  Here is an example:
 
 ```Javascript
 var nodecr = require('nodecr'),
